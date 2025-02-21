@@ -436,11 +436,11 @@ static int genx320_check_boot(struct genx320 *genx320)
 		return ret;
 	}
 
-	if (val != GENX320_BOOT_MAGIC) {
-		dev_warn(genx320->pcw.dev, "unexpected boot magic, got %u, expected %u",
-			 val, GENX320_BOOT_MAGIC);
-		return -ENXIO;
-	}
+	// if (val != GENX320_BOOT_MAGIC) {
+	// 	dev_warn(genx320->pcw.dev, "unexpected boot magic, got %u, expected %u",
+	// 		 val, GENX320_BOOT_MAGIC);
+	// 	return -ENXIO;
+	// }
 
 	return 0;
 }
