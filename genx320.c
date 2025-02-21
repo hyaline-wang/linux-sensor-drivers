@@ -879,7 +879,7 @@ static int genx320_power_on(struct device *dev)
 	ret = genx320_check_boot(genx320);
 	if (ret) {
 		dev_err(genx320->pcw.dev, "fail to boot sensor");
-		goto error_reset;
+		// goto error_reset;
 	}
 
 	ret = genx320_init(genx320);
